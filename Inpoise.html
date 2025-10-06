@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrasi Invoice Usaha</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    main {
+      max-width: 800px;
+      background-color: white;
+      margin: 30px auto;
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+      color: #1e3a8a;
+    }
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .info div {
+      flex: 1 1 45%;
+      background-color: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 10px 15px;
+      box-sizing: border-box;
+    }
+
+    .info strong {
+      color: #1e3a8a;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #e0e7ff;
+      color: #1e3a8a;
+    }
+
+    td {
+      background-color: #f9fafb;
+    }
+
+    .total {
+      text-align: right;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .total strong {
+      font-size: 18px;
+      color: #1e3a8a;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #1e3a8a;
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #0f2b6a;
+    }
+
+    footer {
+      text-align: center;
+      color: #6b7280;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 20px;
+      }
+
+      .info div {
+        flex: 1 1 100%;
+      }
+
+      th, td {
+        font-size: 14px;
+      }
+
+      .total {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Administrasi Invoice Usaha</h2>
+  </header>
+
+  <main>
+    <h1>INVOICE</h1>
+
+    <div class="info">
+      <div>
+        <strong>Dari:</strong><br />
+        Wildan Production<br />
+        Jl. Duren Baru<br />
+        Email: wildanprod@email.com<br />
+        Telp: 0838-7989-4505
+      </div>
+
+      <div>
+        <strong>Kepada:</strong><br />
+        Visinema Pictures<br />
+        Jl. Kemang Raya No. 8, Jakarta Selatan<br />
+        Email: info@visinema.co.id<br />
+        Telp: 021-12345678
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Deskripsi</th>
+          <th>Jumlah</th>
+          <th>Harga Satuan</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Jasa Produksi Film “Project X”</td>
+          <td>1</td>
+          <td>Rp 50.000.000</td>
+          <td>Rp 50.000.000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="total">
+      Subtotal: Rp 50.000.000<br />
+      PPN (11%): Rp 5.500.000<br />
+      <strong>Total: Rp 55.500.000</strong>
+    </div>
+
+    <p style="margin-top: 20px;">
+      Pembayaran melalui transfer ke:<br />
+      <strong>BCA 1234567890 a.n. Wildan Production</strong>
+    </p>
+
+    <div style="text-align: center; margin-top: 25px;">
+      <a class="btn" href="javascript:window.print()">Cetak Invoice</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Wildan Production — Administrasi Invoice Usaha
+  </footer>
+</body>
+</html>
